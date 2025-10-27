@@ -4,66 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendrier ChronoDem</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-color: #121212;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-        .calendar {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 10px;
-            margin: 20px;
-        }
-        .calendar div {
-            background-color: #333;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .calendar div:hover {
-            background-color: #00bcd4;
-        }
-        .legend {
-            margin-top: 20px;
-            text-align: right;
-        }
-        .legend span {
-            margin-left: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS -->
 </head>
 <body>
     <header>
         <h1>Calendrier ChronoDem</h1>
         <nav>
             <ul>
-                <li><a href="index.html" sty
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendrier ChronoDem</title>
-    <link rel="stylesheet" href="style.css">
-</head><link rel="stylesheet" href="style.css">
-<body>
-    <header>
-        <h1>Calendrier ChronoDem</h1>
+                <li><a href="index.html">Page d'Accueil</a></li> <!-- Vérifie que index.html existe bien -->
+                <li><a href="login.html">Se déconnecter</a></li> <!-- Vérifie que login.html existe bien -->
+            </ul>
+        </nav>
     </header>
 
     <section>
         <h2>Calendrier</h2>
         <p>Ici, tu pourras voir le calendrier avec les jours, les événements et les options pour les gérer.</p>
+        <div class="calendar">
+            <!-- Exemple de calendrier, à adapter avec le code dynamique pour afficher les dates -->
+            <div>Lun</div>
+            <div>Mar</div>
+            <div>Mer</div>
+            <div>Jeu</div>
+            <div>Ven</div>
+            <div>Sam</div>
+            <div>Dim</div>
+            <!-- Ajoute les cases du calendrier ici -->
+        </div>
     </section>
 
     <footer>
         <a href="login.html">Se déconnecter</a>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript -->
 </body>
 </html>
