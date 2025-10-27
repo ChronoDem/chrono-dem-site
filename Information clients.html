@@ -3,91 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informations Client</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body style="background-color: #121212; color: white; font-family: Arial, sans-serif;">
-    <header>
-        <h1>Informations Client ChronoDem</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" style="color: #00bcd4;">Accueil</a></li>
-                <li><a href="login.html" style="color: #00bcd4;">Se connecter</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section>
-        <h2>Formulaire Client</h2>
-        <form action="#">
-            <label for="equipe">Équipe :</label>
-            <select id="equipe">
-                <option>David</option>
-                <option>J-p</option>
-                <option>Didier</option>
-                <option>Ryan</option>
-                <option>Gaétan</option>
-            </select>
-
-            <label for="heures">Heures et dates :</label>
-            <input type="datetime-local" id="heures" name="heures">
-
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom">
-
-            <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="prenom">
-
-            <label for="telephone">Téléphone :</label>
-            <input type="text" id="telephone" name="telephone">
-
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email">
-
-            <label for="tva">TVA :</label>
-            <input type="text" id="tva" name="tva">
-
-            <!-- Ajoute les champs d'adresses, options, forfaits, etc. -->
-            
-            <button type="submit">Confirmer</button>
-        </form>
-    </section>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informations Client ChronoDem</title>
-    <link rel="stylesheet" href="style.css">
-</head><link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS -->
+</head>
 <body>
     <header>
-        <h1>Informations Client ChronoDem</h1>
+        <h1>Informations Client</h1>
     </header>
 
     <section>
-        <h2>Saisir les informations client</h2>
-        <form action="#">
-            <label for="client-name">Nom :</label>
-            <input type="text" id="client-name" name="client-name" required>
+        <h2>Informations du client</h2>
+        <form action="#" method="POST">
+            <!-- Champ Équipe -->
+            <label for="equipe">Équipe :</label>
+            <select id="equipe" name="equipe" multiple>
+                <option value="David">David</option>
+                <option value="J-p">J-p</option>
+                <option value="Didier">Didier</option>
+                <option value="Ryan">Ryan</option>
+                <option value="Gaétan">Gaétan</option>
+            </select>
+            
+            <!-- Heures et Dates -->
+            <label for="heures">Heures de travail :</label>
+            <input type="time" id="debut" name="debut" value="07:00">
+            <input type="time" id="fin" name="fin" value="10:00">
+            
+            <label for="client_name">Nom du client :</label>
+            <input type="text" id="client_name" name="client_name">
+            
+            <label for="client_phone">Téléphone :</label>
+            <input type="tel" id="client_phone" name="client_phone">
+            
+            <label for="client_email">Email :</label>
+            <input type="email" id="client_email" name="client_email">
+            
+            <label for="client_tva">TVA :</label>
+            <input type="text" id="client_tva" name="client_tva">
+            
+            <!-- Adresses -->
+            <label for="adresse_chargement">Adresse de chargement :</label>
+            <input type="text" id="adresse_chargement" name="adresse_chargement">
+            
+            <label for="adresse_dechargement">Adresse de déchargement :</label>
+            <input type="text" id="adresse_dechargement" name="adresse_dechargement">
+            
+            <!-- Options supplémentaires -->
+            <label for="options">Options supplémentaires :</label>
+            <select id="options" name="options" multiple>
+                <option value="Geda">Geda 105,-</option>
+                <option value="Camion">Camion 125,-</option>
+                <option value="Remorque">Remorque 65,-</option>
+                <option value="Tractable">Tractable 250,-</option>
+            </select>
+            
+            <!-- Forfaits -->
+            <label for="forfait">Forfait :</label>
+            <select id="forfait" name="forfait">
+                <option value="Essentiel">Essentiel (305€ + 125€ par heure supplémentaire)</option>
+                <option value="Premium">Premium (375€ + 135€ par heure supplémentaire)</option>
+            </select>
+            
+            <!-- Description -->
+            <label for="description">Description :</label>
+            <textarea id="description" name="description"></textarea>
+            
+            <!-- Compte -->
+            <label for="compte">Compte :</label>
+            <textarea id="compte" name="compte"></textarea>
 
-            <label for="client-phone">Téléphone :</label>
-            <input type="text" id="client-phone" name="client-phone" required>
-
-            <label for="client-email">Email :</label>
-            <input type="email" id="client-email" name="client-email" required>
-
-            <!-- Ajouter plus de champs ici... -->
-
-            <button type="submit">Envoyer</button>
+            <!-- Boutons -->
+            <button type="submit">Confirmer</button>
+            <button type="reset">Effacer</button>
         </form>
     </section>
 
     <footer>
-        <a href="calendar.html">Retour au calendrier</a>
+        <a href="login.html">Se déconnecter</a>
     </footer>
-    <script src="script.js"></script>
+
+    <!-- Lier le fichier JavaScript -->
+    <script src="script.js"></script> <!-- Lien vers le fichier JS -->
 </body>
 </html>
