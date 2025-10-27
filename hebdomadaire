@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte Hebdomadaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #121212; color: white; font-family: Arial, sans-serif;">
+    <header>
+        <h1>Compte Hebdomadaire ChronoDem</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" style="color: #00bcd4;">Accueil</a></li>
+                <li><a href="login.html" style="color: #00bcd4;">Se connecter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Heures prestées et Montants</h2>
+        <!-- Exemple d'un tableau pour afficher les heures travaillées et les montants -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Ouvrier</th>
+                    <th>Heures</th>
+                    <th>Montant</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>David</td>
+                    <td><input type="number" id="heures-david" value="0"></td>
+                    <td><span id="montant-david">0€</span></td>
+                </tr>
+                <!-- Ajoute plus de lignes selon les ouvriers -->
+            </tbody>
+        </table>
+
+        <button class="manage">Gérer</button>
+    </section>
+</body>
+</html>
