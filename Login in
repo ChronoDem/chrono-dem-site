@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoDem - Accueil</title>
+    <!-- Ajoute ton CSS ici -->
+</head>
+<body style="background-color: #121212; color: #fff; font-family: Arial, sans-serif;">
+    <header>
+        <h1>Bienvenue sur ChronoDem</h1>
+        <nav>
+            <ul>
+                <li><a href="login.html" style="color: #00bcd4; text-decoration: none;">Se connecter</a></li>
+                <li><a href="calendar.html" style="color: #00bcd4; text-decoration: none;">Calendrier</a></li>
+                <li><a href="account.html" style="color: #00bcd4; text-decoration: none;">Compte Hebdomadaire</a></li>
+                <li><a href="client-info.html" style="color: #00bcd4; text-decoration: none;">Informations Client</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Bienvenue sur le site de gestion ChronoDem</h2>
+        <p>Veillez à vous connecter avant d'accéder aux autres pages.</p>
+    </section>
+</body>
+</html>
