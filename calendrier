@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier ChronoDem</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            margin: 20px;
+        }
+        .calendar div {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .calendar div:hover {
+            background-color: #00bcd4;
+        }
+        .legend {
+            margin-top: 20px;
+            text-align: right;
+        }
+        .legend span {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calendrier ChronoDem</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" sty
